@@ -1113,6 +1113,214 @@ footer p {
     width: 100%;
 }
 
+/* ==================================================
+   LAST MOBILE OVERRIDES
+================================================== */
+.hero {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:600px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        min-height: 100svh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .schedule {
+        width: 100%;
+        gap: 18px;
+    }
+
+    .schedule::before,
+    .schedule-item::before {
+        display: none;
+    }
+
+    .schedule-item {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        gap: 0;
+    }
+
+    .schedule-time {
+        width: max-content;
+        max-width: 100%;
+        min-width: 72px;
+        min-height: 38px;
+        margin: 0 0 10px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-size: .82rem;
+        line-height: 1.25;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .schedule-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .schedule-card h3,
+    .schedule-card p,
+    .schedule-card a,
+    .tag {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* ==================================================
+   FINAL MOBILE OVERRIDES
+================================================== */
+.hero {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:600px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        min-height: 100svh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .schedule {
+        width: 100%;
+        gap: 18px;
+    }
+
+    .schedule::before,
+    .schedule-item::before {
+        display: none;
+    }
+
+    .schedule-item {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        gap: 0;
+    }
+
+    .schedule-time {
+        width: max-content;
+        max-width: 100%;
+        min-width: 72px;
+        min-height: 38px;
+        margin: 0 0 10px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-size: .82rem;
+        line-height: 1.25;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .schedule-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .schedule-card h3,
+    .schedule-card p,
+    .schedule-card a,
+    .tag {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* ==================================================
+   MOBILE FIXES
+================================================== */
+.hero {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:600px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        min-height: 100svh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .schedule {
+        width: 100%;
+        gap: 18px;
+    }
+
+    .schedule::before,
+    .schedule-item::before {
+        display: none;
+    }
+
+    .schedule-item {
+        display: block;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .schedule-time {
+        width: max-content;
+        max-width: 100%;
+        min-width: 72px;
+        min-height: 38px;
+        margin: 0 0 10px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-size: .82rem;
+        line-height: 1.25;
+        white-space: normal;
+    }
+
+    .schedule-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .schedule-card h3,
+    .schedule-card p,
+    .schedule-card a,
+    .tag {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+}
+
 .check-list li::before {
     content: ">";
 }
@@ -1444,4 +1652,74 @@ h2 {
 .trip-nav a:hover::after,
 .trip-nav a:active::after {
     width: 100%;
+}
+
+/* ==================================================
+   LAST MOBILE OVERRIDES
+================================================== */
+.hero {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:600px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        min-height: 100svh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .schedule {
+        width: 100%;
+        gap: 18px;
+    }
+
+    .schedule::before,
+    .schedule-item::before {
+        display: none;
+    }
+
+    .schedule-item {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        gap: 0;
+    }
+
+    .schedule-time {
+        width: max-content;
+        max-width: 100%;
+        min-width: 72px;
+        min-height: 38px;
+        margin: 0 0 10px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-size: .82rem;
+        line-height: 1.25;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .schedule-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .schedule-card h3,
+    .schedule-card p,
+    .schedule-card a,
+    .tag {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
 }
