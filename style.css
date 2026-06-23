@@ -324,6 +324,7 @@ p {
     flex-direction: column;
     gap: 28px;
     position: relative;
+    padding-left: 0;
 }
 
 .schedule::before {
@@ -343,7 +344,7 @@ p {
     grid-template-columns: 100px 1fr;
     gap: 28px;
     align-items: start;
-    left: 90px;
+    margin-left: 90px;
 }
 
 .schedule-time {
@@ -596,6 +597,7 @@ p {
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
+    flex-shrink: 0;
 }
 
 .number-title h2 {
@@ -910,6 +912,15 @@ footer p {
     .schedule-item {
         grid-template-columns: 1fr;
         gap: 15px;
+        margin-left: 50px;
+    }
+
+    .schedule::before {
+        left: 70px;
+    }
+
+    .schedule-item::before {
+        left: -8px;
     }
 
     .schedule-time {
@@ -919,11 +930,23 @@ footer p {
     .next-day {
         padding: 45px 25px;
     }
+
+    .number-title {
+        flex-wrap: wrap;
+    }
+
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
+
+    .pickup {
+        padding: 40px 30px;
+    }
 }
 
 @media(max-width:600px) {
     section {
-        padding: 90px 0;
+        padding: 60px 0;
         position: relative;
     }
 
@@ -938,7 +961,7 @@ footer p {
     }
 
     .card {
-        padding: 28px;
+        padding: 24px 20px;
     }
 
     .hero {
@@ -950,26 +973,44 @@ footer p {
     }
 
     .hero h1 {
-        font-size: 2.4rem;
+        font-size: 2rem;
+        line-height: 1.2;
     }
 
     .hero-sub {
         margin-top: 18px;
-        font-size: 1rem;
-        letter-spacing: .35em;
-        text-transform: uppercase;
+        font-size: 0.9rem;
+        letter-spacing: .1em;
     }
 
     .hero-info {
-        gap: 10px;
+        gap: 8px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .hero-chip {
-        font-size: .8rem;
+        font-size: .75rem;
+        padding: 8px 14px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-title span {
+        font-size: .7rem;
     }
 
     .photo-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .gourmet {
@@ -980,12 +1021,184 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+    .schedule-item {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-left: 40px;
+    }
+
+    .schedule::before {
+        left: 50px;
+        top: 10px;
+    }
+
+    .schedule-item::before {
+        left: -15px;
+        top: 20px;
+        width: 18px;
+        height: 18px;
+        border-width: 3px;
+    }
+
+    .schedule-time {
+        width: 100px;
+        height: 48px;
+        font-size: 0.85rem;
+    }
+
+    .schedule-card {
+        padding: 20px;
+    }
+
+    .schedule-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .schedule-card p {
+        font-size: 0.9rem;
+    }
+
+    .split {
+        gap: 30px;
+    }
+
+    .next-day {
+        padding: 35px 20px;
+    }
+
+    .next-day h2 {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    .next-day p {
+        font-size: 0.95rem;
+    }
+
+    .number-title {
+        gap: 12px;
+        flex-wrap: nowrap;
+    }
+
+    .number-title span {
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+        flex-shrink: 0;
+    }
+
+    .number-title h2 {
+        font-size: 1.6rem;
+    }
+
+    .info-box {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .info-item {
+        padding: 20px;
+    }
+
+    .info-item h4 {
+        font-size: 1rem;
+    }
+
+    .info-item p {
+        font-size: 0.9rem;
+    }
+
+    .icon {
+        width: 56px;
+        height: 56px;
+        font-size: 1.5rem;
+    }
+
+    .photo-card {
+        border-radius: 20px;
+    }
+
+    .photo-body {
+        padding: 18px;
+    }
+
+    .photo-body h3 {
+        font-size: 1.1rem;
+    }
+
+    .photo-body p {
+        font-size: 0.9rem;
+    }
+
+    .memory {
+        padding: 28px 20px;
+    }
+
+    .memory textarea {
+        min-height: 160px;
+        border-radius: 16px;
+        padding: 16px;
+        line-height: 32px;
+        background-size: 100% 32px;
+    }
+
+    .balloon {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .balloon::before {
+        left: 20px;
+    }
+
+    .memo {
+        padding: 18px 20px;
+        border-left-width: 6px;
+    }
+
+    .pickup {
+        padding: 30px 20px;
+        border-radius: 24px;
+    }
+
+    .pickup h2 {
+        font-size: 1.6rem;
+    }
+
+    .pickup p {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+
+    .tag {
+        padding: 5px 12px;
+        font-size: .75rem;
+    }
+
+    .divider {
+        width: 80px;
+        margin: 50px auto;
+    }
+
     .pc {
         display: none;
     }
 
     .sp {
         display: block;
+    }
+
+    footer {
+        padding: 40px 20px;
+    }
+
+    footer p {
+        font-size: .85rem;
+        letter-spacing: .1em;
     }
 }
 
@@ -998,126 +1211,4 @@ footer p {
     transition:
         opacity .8s ease,
         transform .8s ease;
-}
-
-.fade.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.cover-badge {
-    display: inline-block;
-    padding: 12px 24px;
-    margin-bottom: 24px;
-    background: rgba(255, 255, 255, .18);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, .3);
-    border-radius: 999px;
-    color: white;
-    letter-spacing: .15em;
-    text-transform: uppercase;
-    font-size: .8rem;
-}
-
-.hero {
-    background:
-        linear-gradient(rgba(0, 0, 0, .35),
-            rgba(0, 0, 0, .35));
-}
-
-.polaroid {
-    background: white;
-    padding: 14px;
-    border-radius: 8px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
-}
-
-.polaroid img {
-    display: block;
-}
-
-.polaroid p {
-    text-align: center;
-    margin-top: 12px;
-}
-
-/* ==================================================
-   DAY COLOR
-================================================== */
-.day1 {
-    --main: #FF8A65;
-    background: #FFF8F3;
-}
-
-.day2 {
-    --main: #4FC3F7;
-    background: #F4FBFF;
-}
-
-.day3 {
-    --main: #66BB6A;
-    background: #F7FCF7;
-}
-
-.day4 {
-    --main: #40C4FF;
-    --bg: #EAFBFF;
-}
-
-.day5 {
-    --main: #26C6DA;
-    --bg: #ECFFFF;
-}
-
-.day6 {
-    --main: #BA68C8;
-    --bg: #FCF5FF;
-}
-
-.trip-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 40px;
-}
-
-.trip-nav a {
-    background: none;
-    border: none;
-    color: white;
-    position: relative;
-}
-
-.trip-nav a {
-    font-family: "Playfair Display", serif;
-    color: rgba(255, 255, 255, .75);
-    letter-spacing: .18em;
-    font-size: .85rem;
-    position: relative;
-}
-
-.trip-nav a::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -6px;
-    width: 0;
-    height: 1px;
-    background: white;
-    transform: translateX(-50%);
-    transition: .3s;
-}
-
-.trip-nav a:hover::after,
-.trip-nav a:active::after {
-    width: 100%;
-}
-
-.trip-nav a:hover::after {
-    width: 100%;
-}
-
-.trip-nav a:hover::after,
-.trip-nav a:active::after {
-    width: 100%;
 }
